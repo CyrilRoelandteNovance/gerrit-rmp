@@ -1,0 +1,30 @@
+What is gerrit-rmp?
+-------------------
+Are you tired of manually adding reviewers to your patches in gerrit?
+Gerrit-rmp (Review My Patch!) allows you to add a pre-defined set of reviewers
+to one of your reviews.
+
+Start by writing a config file as the one described in config.sample, then run:
+
+    $ ./add_reviewers.py config <gerrit remote>
+
+You will be prompted with a list of your patches and will be able to select
+one. Gerrit-rmp will then add all the reviewers specified in the config file to
+the review. Congrats, you avoided a shitload of clicks in a Web interface, and
+never had to leave the comfort of your 80x24 terminal!
+
+
+
+Known issues
+------------
+- Only Python 3 is supported: it's a feature, not a bug.
+- The error handling is terrible: it is indeed.
+
+
+
+Reporting bugs, sending patches, showing some love
+--------------------------------------------------
+Bugs may be reported by sending an email to cyril@redhat.com.
+Patches may be sent by email to cyril@redhat.com.
+Messages such as "thanks for saving me the trouble of plugging in my mouse" may
+be sent by email to cyril@redhat.com.

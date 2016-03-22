@@ -1,0 +1,19 @@
+# One section per gerrit instance
+[openstack-upstream]
+url=https://review.openstack.org
+user=your_username
+password=secret  # Do not make this file world-readable!
+verify_ssl=no  # Do not check SSL certificate. Not recommended.
+
+# One section per project, named '<gerrit instance>:<project>'
+[openstack-upstream:openstack/glance]
+reviewers=somedev@example.com
+
+# Another gerrit instance
+[openstack-downstream]
+url=https://somecompany.com/gerrit/
+user=your_username
+password=secret
+
+[openstack-downstream:python-glanceclient]
+reviewers=foo@company.com bar@company.com

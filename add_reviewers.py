@@ -88,7 +88,8 @@ def main():
     credentials = (cp[remote]['user'], cp[remote]['password'])
     for reviewer in reviewers:
         print("Adding reviewer %s" % reviewer)
-        add_reviewer(selected_change, reviewer, base_url, credentials)
+        add_reviewer(selected_change, reviewer, base_url, credentials,
+                     verify_ssl)
 
 
 if __name__ == '__main__':
